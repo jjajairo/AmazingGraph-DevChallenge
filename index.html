@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Graph</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="topnav">
+        <a id="logo" href="#home">DevChallenge</a>
+        <div id="menu" class="myTopnav">
+          <a class="menu-nav" href="#home">Home</a>
+          <a class="menu-nav" href="#about">Features</a>
+          <a class="menu-nav" href="#contact">Contact</a>
+          <a
+            href="javascript:void(0);"
+            class="menu-icon"
+            onclick="myFunction()"
+          >
+            <div class="menu-bar bar1"></div>
+            <div class="menu-bar bar2"></div>
+            <div class="menu-bar bar3"></div>
+          </a>
+        </div>
+      </nav>
+      <main>
+        <img
+          class="main-image"
+          src="./assets/team.jpg"
+          alt="Team"
+          width="500px"
+        />
+        <h1 class="title">Create amazing graphics</h1>
+        <p class="subtitle">
+          Colaborate and create beautiful graphics with your team
+        </p>
+        <button class="btn-primary">Start now</button>
+      </main>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "myTopnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "myTopnav";
+        }
+      }
+    </script>
+  </body>
+</html>
